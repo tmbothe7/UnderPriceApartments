@@ -9,9 +9,11 @@ page_content = requests.get('https://www.renthop.com/nyc/apartments-for-rent').c
 
 page = ApartmentPage(page_content)
 
+
+
 Apartments =page.apartments()
 
-for ap in Apartments:
-    print (f'{ap.apartment_name},{ap.address}')
+#for ap in Apartments:
+#    print (f'{ap.apartment_name},{ap.address}')
 
 
